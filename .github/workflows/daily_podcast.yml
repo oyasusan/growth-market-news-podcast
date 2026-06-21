@@ -102,7 +102,7 @@ jobs:
           python - << 'EOF'
           import json, os
           from pathlib import Path
-          from datetime import datetime
+          from datetime import datetime, timezone, timedelta
 
           episodes_dir = Path("docs/episodes")
           mp3_files = sorted(episodes_dir.glob("podcast_*.mp3"), reverse=True)[:7]
@@ -147,7 +147,7 @@ jobs:
             <h2>最新エピソード</h2>
             {episodes_html if episodes_html else '<p>エピソードを生成中...</p>'}
             <hr>
-            <p>Generated at {datetime.now().strftime('%Y-%m-%d %H:%M')} JST</p>
+            <p>Generated at {datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M')} JST</p>
           </body>
           </html>"""
 
