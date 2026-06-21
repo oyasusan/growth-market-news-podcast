@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>グロース市場ニュース</title>
+    <link>https://example.github.io/grawth-podcast</link>
+    <description>東証グロース市場の最新動向を毎朝お届けする音声ニュースです。教育目的であり投資助言ではありません。</description>
+    <language>ja</language>
+    <itunes:author>grawth-podcast</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business">
+      <itunes:category text="Investing"/>
+    </itunes:category>
+  </channel>
+</rss>

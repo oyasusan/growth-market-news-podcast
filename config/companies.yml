@@ -1,0 +1,137 @@
+companies:
+  # フィンテック・SaaS
+  - code: "4478"
+    name: "freee"
+    name_en: "freee K.K."
+    sector: "SaaS"
+    keywords:
+      - "freee"
+      - "フリー"
+      - "クラウド会計"
+
+  - code: "4443"
+    name: "Sansan"
+    name_en: "Sansan, Inc."
+    sector: "SaaS"
+    keywords:
+      - "Sansan"
+      - "名刺管理"
+
+  - code: "4477"
+    name: "BASE"
+    name_en: "BASE, Inc."
+    sector: "EC"
+    keywords:
+      - "BASE"
+      - "ベイス"
+      - "ネットショップ"
+
+  - code: "3923"
+    name: "ラクス"
+    name_en: "Rakus Co., Ltd."
+    sector: "SaaS"
+    keywords:
+      - "ラクス"
+      - "楽楽精算"
+      - "楽楽明細"
+
+  # エンタメ・コンテンツ
+  - code: "5253"
+    name: "COVER"
+    name_en: "COVER Corporation"
+    sector: "エンタメ"
+    keywords:
+      - "COVER"
+      - "ホロライブ"
+      - "VTuber"
+
+  - code: "9166"
+    name: "GENDA"
+    name_en: "GENDA Inc."
+    sector: "エンタメ"
+    keywords:
+      - "GENDA"
+      - "ゲンダ"
+      - "アミューズメント"
+
+  # HR・労働
+  - code: "215A"
+    name: "タイミー"
+    name_en: "Timee, Inc."
+    sector: "HR"
+    keywords:
+      - "タイミー"
+      - "Timee"
+      - "スキマバイト"
+
+  # マーケティング・DX
+  - code: "5027"
+    name: "AnyMind Group"
+    name_en: "AnyMind Group Inc."
+    sector: "マーケティング"
+    keywords:
+      - "AnyMind"
+      - "エニーマインド"
+
+  - code: "4180"
+    name: "Appier Group"
+    name_en: "Appier Group, Inc."
+    sector: "AI"
+    keywords:
+      - "Appier"
+      - "アッパイア"
+
+  # 不動産テック・IoT
+  - code: "4379"
+    name: "Photosynth"
+    name_en: "Photosynth Inc."
+    sector: "IoT"
+    keywords:
+      - "Photosynth"
+      - "フォトシンス"
+      - "Akerun"
+
+  # M&A・金融
+  - code: "9552"
+    name: "M&Aリサーチ研究所"
+    name_en: "M&A Research Institute Holdings"
+    sector: "M&A"
+    keywords:
+      - "M&Aリサーチ"
+      - "M&A研究所"
+
+  # EC・物流
+  - code: "4051"
+    name: "GMOフィナンシャルゲート"
+    name_en: "GMO Financial Gate, Inc."
+    sector: "FinTech"
+    keywords:
+      - "GMOフィナンシャルゲート"
+      - "決済端末"
+
+  # バイオ・ヘルスケア
+  - code: "4589"
+    name: "オンコリスバイオファーマ"
+    name_en: "Oncolys BioPharma Inc."
+    sector: "バイオ"
+    keywords:
+      - "オンコリス"
+      - "テロメライシン"
+
+  # 宇宙・ディープテック
+  - code: "9348"
+    name: "ispace"
+    name_en: "ispace, inc."
+    sector: "宇宙"
+    keywords:
+      - "ispace"
+      - "月面探査"
+
+  # ゲーム
+  - code: "3991"
+    name: "ウォンテッドリー"
+    name_en: "Wantedly, Inc."
+    sector: "HR"
+    keywords:
+      - "ウォンテッドリー"
+      - "Wantedly"

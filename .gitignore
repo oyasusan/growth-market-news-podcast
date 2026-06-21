@@ -1,0 +1,31 @@
+# 環境変数
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# データ・出力（SQLiteはGit管理対象）
+output/voice_*.mp3
+output/script_*.txt
+
+# ローカル一時ファイル
+*.tmp
+*.log
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+.dockerignore

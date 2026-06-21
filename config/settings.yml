@@ -1,0 +1,75 @@
+system:
+  timezone: "Asia/Tokyo"
+  log_level: "INFO"
+  data_dir: "data"
+  output_dir: "output"
+  docs_dir: "docs"
+  assets_dir: "assets"
+
+market:
+  index_code: "^TDXP"
+  index_fallback_etf: "2556.T"
+  index_name: "東証グロース市場250指数"
+  market_open: "09:00"
+  market_close: "15:30"
+  data_delay_hours: 1
+
+news:
+  max_articles_per_company: 5
+  max_total_articles: 50
+  article_age_limit_hours: 48
+  sources:
+    - name: "Google News"
+      type: "rss"
+      enabled: true
+    - name: "PR TIMES"
+      type: "rss"
+      url_template: "https://prtimes.jp/rss/company/{company_code}.rss"
+      enabled: true
+    - name: "TDnet"
+      type: "scrape"
+      enabled: true
+
+ai:
+  max_retries: 3
+  retry_delay: 5
+  max_tokens: 4000
+  temperature: 0.7
+  market_summary_max_length: 500
+  company_analysis_max_length: 300
+  theme_analysis_max_length: 400
+  script_max_length: 3000
+
+podcast:
+  min_duration_minutes: 5
+  max_duration_minutes: 10
+  target_duration_minutes: 7
+  category: "Business"
+  subcategory: "Investing"
+  language: "ja"
+  explicit: false
+  max_episodes_in_rss: 7
+  max_mp3_storage_days: 7
+
+tts:
+  voice: "ja-JP-NanamiNeural"
+  rate: "+10%"
+  volume: "+0%"
+  pitch: "+0Hz"
+  sentence_pause_ms: 500
+  section_pause_ms: 1000
+
+audio:
+  bitrate: "128k"
+  sample_rate: 44100
+  channels: 2
+  normalize_loudness: -16.0
+  opening_fade_in_ms: 500
+  ending_fade_out_ms: 2000
+  bgm_volume_db: -20
+  voice_volume_db: 0
+
+cleanup:
+  delete_raw_wav: true
+  keep_script: true
+  keep_analysis: true

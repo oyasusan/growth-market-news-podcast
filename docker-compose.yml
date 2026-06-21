@@ -1,0 +1,28 @@
+services:
+  podcast-generator:
+    build: .
+    image: grawth-podcast:latest
+    container_name: grawth-podcast
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./docs:/app/docs
+      - ./assets:/app/assets
+    command: ["--date", "${TARGET_DATE:-}"]
+
+  podcast-dry-run:
+    build: .
+    image: grawth-podcast:latest
+    container_name: grawth-podcast-dryrun
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./docs:/app/docs
+      - ./assets:/app/assets
+    command: ["--dry-run", "--log-level", "DEBUG"]
+    profiles:
+      - test
