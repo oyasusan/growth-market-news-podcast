@@ -1,9 +1,9 @@
 name: Daily Podcast Generation
 
 on:
-  schedule:
-    # 毎朝7:00 JST (= 22:00 UTC 前日)
-    - cron: "0 22 * * 0-4"
+  # schedule は cron-job.org に移管済み (workflow_dispatch で手動トリガーされる)
+  # schedule:
+  #   - cron: "0 22 * * 0-4"
   workflow_dispatch:
     inputs:
       target_date:
