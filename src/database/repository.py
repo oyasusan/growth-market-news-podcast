@@ -99,7 +99,11 @@ class Repository:
     def get_stock_data_for_date(self, target_date: str) -> list[dict]:
         with self._conn() as conn:
             rows = conn.execute(
-                "SELECT * FROM market_data WHERE date=? AND data_type='stock' ORDER BY change_pct DESC",
+                """SELECT m.*, c.name as company_name, c.sector
+                   FROM market_data m
+                   LEFT JOIN companies c ON m.company_code = c.code
+                   WHERE m.date=? AND m.data_type='stock'
+                   ORDER BY ABS(COALESCE(m.change_pct, 0)) DESC""",
                 (target_date,)
             ).fetchall()
         return [dict(r) for r in rows]
