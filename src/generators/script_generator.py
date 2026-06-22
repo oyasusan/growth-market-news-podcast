@@ -49,6 +49,13 @@ def _company_name(company: dict, stock_data: list[dict]) -> str:
     return name or code
 
 
+def _company_label(name: str, code: str) -> str:
+    """「企業名、証券コードXXXX」形式の読み上げ用テキストを返す。"""
+    if name and code and name != code:
+        return f"{name}、証券コード{code}"
+    return name or code
+
+
 N = "ナナ"
 K = "ケンタ"
 
@@ -123,10 +130,12 @@ class ScriptGenerator:
         if stock_data:
             top = next((s for s in stock_data if (s.get("change_pct") or 0) > 0), None)
             if top:
-                name = top.get("company_name") or top.get("company_code", "")
+                label = _company_label(
+                    top.get("company_name") or "", top.get("company_code") or ""
+                )
                 pct = top.get("change_pct", 0)
                 lines.append(line(N, f"特に目立った銘柄はありましたか？"))
-                lines.append(line(K, f"監視銘柄の中では{name}が前日比{pct:.1f}パーセント上昇し、最も大きく動きました。"))
+                lines.append(line(K, f"監視銘柄の中では{label}が前日比{pct:.1f}パーセント上昇し、最も大きく動きました。"))
 
         return lines
 
@@ -147,23 +156,25 @@ class ScriptGenerator:
 
         for i, company in enumerate(companies[:3]):
             name = _company_name(company, stock_data)
+            code = company.get("code", "")
+            label = _company_label(name, code)
             reason = company.get("reason", "")
             detail = company.get("detail", "")
 
             if i == 0:
-                lines.append(line(K, f"{ordinals[i]}は{name}です。{reason}"))
+                lines.append(line(K, f"{ordinals[i]}は{label}です。{reason}"))
                 if detail:
                     lines.append(transitions[0])
                     lines.append(line(K, detail))
             elif i == 1:
                 lines.append(transitions[1])
-                lines.append(line(K, f"{ordinals[i]}は{name}です。{reason}"))
+                lines.append(line(K, f"{ordinals[i]}は{label}です。{reason}"))
                 if detail:
                     lines.append(line(N, "詳しく教えてください。"))
                     lines.append(line(K, detail))
             elif i == 2:
                 lines.append(transitions[2])
-                lines.append(line(K, f"{ordinals[i]}は{name}です。{reason}"))
+                lines.append(line(K, f"{ordinals[i]}は{label}です。{reason}"))
                 if detail:
                     lines.append(line(N, "詳しく教えてください。"))
                     lines.append(line(K, detail))
@@ -187,14 +198,13 @@ class ScriptGenerator:
                 continue
             seen.add(title)
 
-            company_name = (
-                article.get("company_name")
-                or (f"証券コード{article['company_code']}" if article.get("company_code") else None)
-            )
+            company_name = article.get("company_name") or ""
+            company_code = article.get("company_code") or ""
             source = _source_label(article.get("source", ""))
 
-            if company_name:
-                intro = f"{company_name}に関するニュースです。"
+            if company_name or company_code:
+                label = _company_label(company_name, company_code)
+                intro = f"{label}に関するニュースです。"
             else:
                 intro = "市場全般のニュースです。"
 
