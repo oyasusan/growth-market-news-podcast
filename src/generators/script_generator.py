@@ -140,9 +140,9 @@ class ScriptGenerator:
         lines = [line(N, "続きまして、前日の注目企業を3社ご紹介します。ケンタさん、まず1社目は？")]
         ordinals = ["1社目", "2社目", "3社目"]
         transitions = [
-            (N, "詳しく教えてください。"),
-            (N, "なるほど。2社目はいかがでしょう？"),
-            (N, "3社目はどちらですか？"),
+            line(N, "詳しく教えてください。"),
+            line(N, "なるほど。2社目はいかがでしょう？"),
+            line(N, "3社目はどちらですか？"),
         ]
 
         for i, company in enumerate(companies[:3]):

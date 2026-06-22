@@ -101,15 +101,16 @@ class AIAnalyzer:
         stock_lines = []
         for s in sorted(stock_data, key=lambda x: abs(x.get("change_pct") or 0), reverse=True)[:15]:
             code = s.get("company_code", "")
+            name = s.get("company_name") or code
             close = s.get("close_price", "N/A")
             pct = s.get("change_pct", "N/A")
             vol = s.get("volume", "N/A")
-            stock_lines.append(f"  {code}: 終値{close} 前日比{pct}% 出来高{vol}")
+            stock_lines.append(f"  {name}（{code}）: 終値{close} 前日比{pct}% 出来高{vol}")
         stock_text = "\n".join(stock_lines) if stock_lines else "データなし"
 
         news_lines = []
         for i, n in enumerate(news[:30]):
-            company = n.get("company_code", "市場全般")
+            company = n.get("company_name") or n.get("company_code") or "市場全般"
             news_lines.append(f"  [{i+1}] ({company}) {n['title']}")
         news_text = "\n".join(news_lines) if news_lines else "ニュースなし"
 
@@ -121,6 +122,15 @@ class AIAnalyzer:
             ipo_data=ipo_text,
         )
 
+    # 無料で利用可能なモデルの優先順リスト（利用不可の場合は次を試行）
+    OPENROUTER_FREE_MODELS = [
+        "meta-llama/llama-3.1-8b-instruct:free",
+        "google/gemma-2-9b-it:free",
+        "mistralai/mistral-7b-instruct:free",
+        "microsoft/phi-3-mini-128k-instruct:free",
+        "deepseek/deepseek-r1:free",
+    ]
+
     def _call_openrouter(self, prompt: str) -> str:
         from openai import OpenAI
 
@@ -128,7 +138,6 @@ class AIAnalyzer:
         if not api_key:
             raise ValueError("OPENROUTER_API_KEY が設定されていません")
 
-        model = os.getenv("OPENROUTER_MODEL", "google/gemma-3-27b-it:free")
         client = OpenAI(
             base_url="https://openrouter.ai/api/v1",
             api_key=api_key,
@@ -138,15 +147,36 @@ class AIAnalyzer:
             },
         )
 
-        response = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=self.settings.get("ai", {}).get("max_tokens", 4000),
-            temperature=self.settings.get("ai", {}).get("temperature", 0.7),
+        # 環境変数で指定されたモデルを先頭に、フォールバックリストと結合
+        primary = os.getenv("OPENROUTER_MODEL", "")
+        candidates = (
+            [primary] + [m for m in self.OPENROUTER_FREE_MODELS if m != primary]
+            if primary
+            else self.OPENROUTER_FREE_MODELS
         )
-        content = response.choices[0].message.content
-        logger.info(f"OpenRouter応答取得 (model={model}, tokens={response.usage.total_tokens})")
-        return content
+
+        last_error = None
+        for model in candidates:
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=self.settings.get("ai", {}).get("max_tokens", 4000),
+                    temperature=self.settings.get("ai", {}).get("temperature", 0.7),
+                )
+                content = response.choices[0].message.content
+                self._used_model = model
+                logger.info(f"OpenRouter応答取得 (model={model}, tokens={response.usage.total_tokens})")
+                return content
+            except Exception as e:
+                err_str = str(e)
+                if "404" in err_str or "unavailable" in err_str.lower() or "free" in err_str.lower():
+                    logger.warning(f"モデル {model} は無料利用不可 - 次を試行")
+                    last_error = e
+                    continue
+                raise
+
+        raise RuntimeError(f"全フォールバックモデル試行失敗: {last_error}")
 
     def _call_gemini(self, prompt: str) -> str:
         import google.generativeai as genai
@@ -164,7 +194,7 @@ class AIAnalyzer:
     def _get_model_name(self) -> str:
         if self.provider == "gemini":
             return "gemini-1.5-flash"
-        return os.getenv("OPENROUTER_MODEL", "google/gemma-3-27b-it:free")
+        return getattr(self, "_used_model", os.getenv("OPENROUTER_MODEL", "openrouter-free"))
 
     def _parse_response(self, response_text: str) -> dict:
         text = response_text.strip()
