@@ -6,14 +6,14 @@
       "code": "4379",
       "name": "Photosynth",
       "sector": "IoT",
-      "avg_change_pct": 2.48,
-      "max_change_pct": 2.96
+      "avg_change_pct": 2.6,
+      "max_change_pct": 3.2
     },
     {
       "code": "4478",
       "name": "freee",
       "sector": "SaaS",
-      "avg_change_pct": 0.46,
+      "avg_change_pct": 0.56,
       "max_change_pct": 0.91
     },
     {
@@ -24,80 +24,80 @@
       "max_change_pct": 0.38
     },
     {
-      "code": "4180",
-      "name": "Appier Group",
-      "sector": "AI",
-      "avg_change_pct": 0.07,
-      "max_change_pct": 0.5
-    },
-    {
-      "code": "4051",
-      "name": "GMOフィナンシャルゲート",
-      "sector": "FinTech",
-      "avg_change_pct": -0.68,
-      "max_change_pct": -0.61
-    },
-    {
-      "code": "9552",
-      "name": "M&Aリサーチ研究所",
-      "sector": "M&A",
-      "avg_change_pct": -0.8,
-      "max_change_pct": 0.87
-    },
-    {
       "code": "3923",
       "name": "ラクス",
       "sector": "SaaS",
-      "avg_change_pct": -0.88,
-      "max_change_pct": 0.35
+      "avg_change_pct": -0.55,
+      "max_change_pct": 1.0
+    },
+    {
+      "code": "4180",
+      "name": "Appier Group",
+      "sector": "AI",
+      "avg_change_pct": -0.62,
+      "max_change_pct": -0.37
+    },
+    {
+      "code": "4443",
+      "name": "Sansan",
+      "sector": "SaaS",
+      "avg_change_pct": -1.09,
+      "max_change_pct": 2.78
     },
     {
       "code": "5027",
       "name": "AnyMind Group",
       "sector": "マーケティング",
-      "avg_change_pct": -1.66,
-      "max_change_pct": 3.61
+      "avg_change_pct": -1.09,
+      "max_change_pct": 4.74
+    },
+    {
+      "code": "9348",
+      "name": "ispace",
+      "sector": "宇宙",
+      "avg_change_pct": -1.21,
+      "max_change_pct": 4.84
     },
     {
       "code": "3991",
       "name": "ウォンテッドリー",
       "sector": "HR",
-      "avg_change_pct": -1.84,
-      "max_change_pct": -1.84
+      "avg_change_pct": -1.25,
+      "max_change_pct": -0.66
     },
     {
-      "code": "4443",
-      "name": "Sansan",
-      "sector": "SaaS",
-      "avg_change_pct": -1.96,
-      "max_change_pct": 1.04
+      "code": "4051",
+      "name": "GMOフィナンシャルゲート",
+      "sector": "FinTech",
+      "avg_change_pct": -1.66,
+      "max_change_pct": -0.75
     }
   ],
   "top_losers_30d": [
     {
-      "code": "9348",
-      "name": "ispace",
-      "avg_change_pct": -7.26
-    },
-    {
       "code": "5253",
       "name": "COVER",
-      "avg_change_pct": -5.1
+      "avg_change_pct": -5.21
     },
     {
       "code": "9166",
       "name": "GENDA",
-      "avg_change_pct": -4.52
+      "avg_change_pct": -3.48
+    },
+    {
+      "code": "9552",
+      "name": "M&Aリサーチ研究所",
+      "avg_change_pct": -3.38
     },
     {
       "code": "215A",
       "name": "タイミー",
-      "avg_change_pct": -2.66
+      "avg_change_pct": -1.96
     },
     {
-      "code": "4443",
-      "name": "Sansan",
-      "avg_change_pct": -1.96
+      "code": "4051",
+      "name": "GMOフィナンシャルゲート",
+      "avg_change_pct": -1.66
     }
   ],
   "top_volume_stocks": [
@@ -117,23 +117,18 @@
       "appearance_count": 2
     },
     {
+      "code": "3923",
+      "name": "ラクス",
+      "appearance_count": 2
+    },
+    {
       "code": "4180",
       "name": "Appier Group",
       "appearance_count": 2
     },
     {
-      "code": "4051",
-      "name": "GMOフィナンシャルゲート",
-      "appearance_count": 2
-    },
-    {
-      "code": "9552",
-      "name": "M&Aリサーチ研究所",
-      "appearance_count": 2
-    },
-    {
-      "code": "3923",
-      "name": "ラクス",
+      "code": "4443",
+      "name": "Sansan",
       "appearance_count": 2
     },
     {
@@ -142,13 +137,18 @@
       "appearance_count": 2
     },
     {
+      "code": "9348",
+      "name": "ispace",
+      "appearance_count": 2
+    },
+    {
       "code": "3991",
       "name": "ウォンテッドリー",
       "appearance_count": 2
     },
     {
-      "code": "4443",
-      "name": "Sansan",
+      "code": "4051",
+      "name": "GMOフィナンシャルゲート",
       "appearance_count": 2
     }
   ],
