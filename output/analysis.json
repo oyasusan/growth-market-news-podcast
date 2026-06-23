@@ -6,57 +6,29 @@
       "code": "4379",
       "name": "Photosynth",
       "sector": "IoT",
-      "avg_change_pct": 3.71,
-      "max_change_pct": 5.91
-    },
-    {
-      "code": "5027",
-      "name": "AnyMind Group",
-      "sector": "マーケティング",
-      "avg_change_pct": 1.23,
-      "max_change_pct": 5.87
-    },
-    {
-      "code": "9348",
-      "name": "ispace",
-      "sector": "宇宙",
-      "avg_change_pct": 0.81,
-      "max_change_pct": 4.84
-    },
-    {
-      "code": "9166",
-      "name": "GENDA",
-      "sector": "エンタメ",
-      "avg_change_pct": 0.65,
-      "max_change_pct": 8.9
-    },
-    {
-      "code": "4443",
-      "name": "Sansan",
-      "sector": "SaaS",
-      "avg_change_pct": 0.36,
-      "max_change_pct": 3.27
+      "avg_change_pct": 1.89,
+      "max_change_pct": 3.2
     },
     {
       "code": "4477",
       "name": "BASE",
       "sector": "EC",
-      "avg_change_pct": 0.25,
+      "avg_change_pct": -0.25,
       "max_change_pct": 0.38
     },
     {
       "code": "4478",
       "name": "freee",
       "sector": "SaaS",
-      "avg_change_pct": 0.1,
+      "avg_change_pct": -0.44,
       "max_change_pct": 0.91
     },
     {
-      "code": "3923",
-      "name": "ラクス",
-      "sector": "SaaS",
-      "avg_change_pct": -0.26,
-      "max_change_pct": 1.0
+      "code": "4180",
+      "name": "Appier Group",
+      "sector": "AI",
+      "avg_change_pct": -0.46,
+      "max_change_pct": -0.13
     },
     {
       "code": "3991",
@@ -66,64 +38,72 @@
       "max_change_pct": -0.22
     },
     {
-      "code": "4180",
-      "name": "Appier Group",
-      "sector": "AI",
-      "avg_change_pct": -1.37,
-      "max_change_pct": -0.37
-    }
-  ],
-  "top_losers_30d": [
-    {
-      "code": "9552",
-      "name": "M&Aリサーチ研究所",
-      "avg_change_pct": -4.48
+      "code": "3923",
+      "name": "ラクス",
+      "sector": "SaaS",
+      "avg_change_pct": -1.17,
+      "max_change_pct": 1.0
     },
     {
-      "code": "5253",
-      "name": "COVER",
-      "avg_change_pct": -3.96
+      "code": "4443",
+      "name": "Sansan",
+      "sector": "SaaS",
+      "avg_change_pct": -1.51,
+      "max_change_pct": 2.78
     },
     {
       "code": "4051",
       "name": "GMOフィナンシャルゲート",
-      "avg_change_pct": -2.22
+      "sector": "FinTech",
+      "avg_change_pct": -1.94,
+      "max_change_pct": -0.75
     },
     {
       "code": "215A",
       "name": "タイミー",
-      "avg_change_pct": -1.91
+      "sector": "HR",
+      "avg_change_pct": -1.96,
+      "max_change_pct": -0.86
     },
     {
-      "code": "4180",
-      "name": "Appier Group",
-      "avg_change_pct": -1.37
+      "code": "9348",
+      "name": "ispace",
+      "sector": "宇宙",
+      "avg_change_pct": -2.05,
+      "max_change_pct": 4.84
+    }
+  ],
+  "top_losers_30d": [
+    {
+      "code": "5253",
+      "name": "COVER",
+      "avg_change_pct": -4.59
+    },
+    {
+      "code": "9166",
+      "name": "GENDA",
+      "avg_change_pct": -2.95
+    },
+    {
+      "code": "9552",
+      "name": "M&Aリサーチ研究所",
+      "avg_change_pct": -2.53
+    },
+    {
+      "code": "5027",
+      "name": "AnyMind Group",
+      "avg_change_pct": -2.36
+    },
+    {
+      "code": "9348",
+      "name": "ispace",
+      "avg_change_pct": -2.05
     }
   ],
   "top_volume_stocks": [
     {
       "code": "4379",
       "name": "Photosynth",
-      "appearance_count": 3
-    },
-    {
-      "code": "5027",
-      "name": "AnyMind Group",
-      "appearance_count": 3
-    },
-    {
-      "code": "9348",
-      "name": "ispace",
-      "appearance_count": 3
-    },
-    {
-      "code": "9166",
-      "name": "GENDA",
-      "appearance_count": 3
-    },
-    {
-      "code": "4443",
-      "name": "Sansan",
       "appearance_count": 3
     },
     {
@@ -137,8 +117,8 @@
       "appearance_count": 3
     },
     {
-      "code": "3923",
-      "name": "ラクス",
+      "code": "4180",
+      "name": "Appier Group",
       "appearance_count": 3
     },
     {
@@ -147,8 +127,28 @@
       "appearance_count": 3
     },
     {
-      "code": "4180",
-      "name": "Appier Group",
+      "code": "3923",
+      "name": "ラクス",
+      "appearance_count": 3
+    },
+    {
+      "code": "4443",
+      "name": "Sansan",
+      "appearance_count": 3
+    },
+    {
+      "code": "4051",
+      "name": "GMOフィナンシャルゲート",
+      "appearance_count": 3
+    },
+    {
+      "code": "215A",
+      "name": "タイミー",
+      "appearance_count": 3
+    },
+    {
+      "code": "9348",
+      "name": "ispace",
       "appearance_count": 3
     }
   ],
