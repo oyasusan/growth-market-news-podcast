@@ -1,83 +1,83 @@
 {
-  "generated_at": "2026-06-23",
+  "generated_at": "2026-06-24",
   "period_days": 30,
   "top_gainers_30d": [
-    {
-      "code": "4379",
-      "name": "Photosynth",
-      "sector": "IoT",
-      "avg_change_pct": 0.57,
-      "max_change_pct": 3.2
-    },
     {
       "code": "4477",
       "name": "BASE",
       "sector": "EC",
-      "avg_change_pct": -0.37,
+      "avg_change_pct": -0.75,
       "max_change_pct": 0.38
-    },
-    {
-      "code": "4478",
-      "name": "freee",
-      "sector": "SaaS",
-      "avg_change_pct": -0.51,
-      "max_change_pct": 0.91
-    },
-    {
-      "code": "4180",
-      "name": "Appier Group",
-      "sector": "AI",
-      "avg_change_pct": -0.54,
-      "max_change_pct": -0.37
     },
     {
       "code": "3991",
       "name": "ウォンテッドリー",
       "sector": "HR",
-      "avg_change_pct": -0.91,
+      "avg_change_pct": -0.93,
       "max_change_pct": -0.22
+    },
+    {
+      "code": "4180",
+      "name": "Appier Group",
+      "sector": "AI",
+      "avg_change_pct": -1.14,
+      "max_change_pct": -0.37
+    },
+    {
+      "code": "4379",
+      "name": "Photosynth",
+      "sector": "IoT",
+      "avg_change_pct": -1.26,
+      "max_change_pct": 3.2
     },
     {
       "code": "3923",
       "name": "ラクス",
       "sector": "SaaS",
-      "avg_change_pct": -1.2,
+      "avg_change_pct": -1.76,
       "max_change_pct": 1.0
     },
     {
-      "code": "4443",
-      "name": "Sansan",
+      "code": "4478",
+      "name": "freee",
       "sector": "SaaS",
-      "avg_change_pct": -1.76,
-      "max_change_pct": 2.78
+      "avg_change_pct": -1.82,
+      "max_change_pct": 0.91
     },
     {
-      "code": "5027",
-      "name": "AnyMind Group",
-      "sector": "マーケティング",
-      "avg_change_pct": -2.01,
-      "max_change_pct": 4.74
+      "code": "9166",
+      "name": "GENDA",
+      "sector": "エンタメ",
+      "avg_change_pct": -1.96,
+      "max_change_pct": 1.7
     },
     {
       "code": "4051",
       "name": "GMOフィナンシャルゲート",
       "sector": "FinTech",
-      "avg_change_pct": -2.05,
+      "avg_change_pct": -2.16,
       "max_change_pct": -0.75
     },
     {
-      "code": "9348",
-      "name": "ispace",
-      "sector": "宇宙",
-      "avg_change_pct": -2.13,
-      "max_change_pct": 4.84
+      "code": "4443",
+      "name": "Sansan",
+      "sector": "SaaS",
+      "avg_change_pct": -2.21,
+      "max_change_pct": 2.78
+    },
+    {
+      "code": "215A",
+      "name": "タイミー",
+      "sector": "HR",
+      "avg_change_pct": -2.49,
+      "max_change_pct": -0.86
     }
   ],
   "top_losers_30d": [
     {
       "code": "5253",
       "name": "COVER",
-      "avg_change_pct": -4.59
+      "avg_change_pct": -5.04
     },
     {
       "code": "9552",
@@ -85,89 +85,89 @@
       "avg_change_pct": -3.07
     },
     {
-      "code": "9166",
-      "name": "GENDA",
-      "avg_change_pct": -2.55
+      "code": "5027",
+      "name": "AnyMind Group",
+      "avg_change_pct": -2.95
+    },
+    {
+      "code": "9348",
+      "name": "ispace",
+      "avg_change_pct": -2.7
     },
     {
       "code": "215A",
       "name": "タイミー",
-      "avg_change_pct": -2.14
-    },
-    {
-      "code": "9348",
-      "name": "ispace",
-      "avg_change_pct": -2.13
+      "avg_change_pct": -2.49
     }
   ],
   "top_volume_stocks": [
     {
-      "code": "4379",
-      "name": "Photosynth",
-      "appearance_count": 3
-    },
-    {
       "code": "4477",
       "name": "BASE",
-      "appearance_count": 3
-    },
-    {
-      "code": "4478",
-      "name": "freee",
-      "appearance_count": 3
-    },
-    {
-      "code": "4180",
-      "name": "Appier Group",
-      "appearance_count": 3
+      "appearance_count": 4
     },
     {
       "code": "3991",
       "name": "ウォンテッドリー",
-      "appearance_count": 3
+      "appearance_count": 4
+    },
+    {
+      "code": "4180",
+      "name": "Appier Group",
+      "appearance_count": 4
+    },
+    {
+      "code": "4379",
+      "name": "Photosynth",
+      "appearance_count": 4
     },
     {
       "code": "3923",
       "name": "ラクス",
-      "appearance_count": 3
+      "appearance_count": 4
     },
     {
-      "code": "4443",
-      "name": "Sansan",
-      "appearance_count": 3
+      "code": "4478",
+      "name": "freee",
+      "appearance_count": 4
     },
     {
-      "code": "5027",
-      "name": "AnyMind Group",
-      "appearance_count": 3
+      "code": "9166",
+      "name": "GENDA",
+      "appearance_count": 4
     },
     {
       "code": "4051",
       "name": "GMOフィナンシャルゲート",
-      "appearance_count": 3
+      "appearance_count": 4
     },
     {
-      "code": "9348",
-      "name": "ispace",
-      "appearance_count": 3
+      "code": "4443",
+      "name": "Sansan",
+      "appearance_count": 4
+    },
+    {
+      "code": "215A",
+      "name": "タイミー",
+      "appearance_count": 4
     }
   ],
   "trending_themes": [
     {
       "theme": "FinTech",
-      "score": 1
+      "score": 30
     },
     {
       "theme": "エンタメ",
-      "score": 1
-    },
-    {
-      "theme": "HR",
-      "score": 1
+      "score": 30
     },
     {
       "theme": "宇宙",
-      "score": 1
+      "score": 30
+    },
+    {
+      "theme": "HR",
+      "score": 29
     }
   ],
   "top_keywords": []
