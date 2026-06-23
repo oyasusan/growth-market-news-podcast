@@ -83,8 +83,8 @@ class ScriptGenerator:
             self._market_overview(market_data, stock_data, analysis),
             self._spotlight_companies(analysis, stock_data),
             self._important_news(news),
-            self._theme_analysis(analysis),
-            self._tomorrow_points(analysis, ipo_text),
+            self._theme_analysis(analysis, stock_data, news),
+            self._tomorrow_points(analysis, ipo_text, news),
             self._ending(date_jp),
         ]
         script = "\n".join(ln for sec in sections for ln in sec if ln)
@@ -223,8 +223,13 @@ class ScriptGenerator:
 
     # ── Theme Analysis ────────────────────────────────────────────────────
 
-    def _theme_analysis(self, analysis: dict) -> list[str]:
+    def _theme_analysis(self, analysis: dict, stock_data: list[dict] = None,
+                        news: list[dict] = None) -> list[str]:
         theme_text = analysis.get("theme_analysis", "")
+
+        if not theme_text:
+            theme_text = self._build_theme_fallback(stock_data or [], news or [])
+
         if not theme_text:
             return []
 
@@ -241,24 +246,63 @@ class ScriptGenerator:
 
         return lines
 
+    def _build_theme_fallback(self, stock_data: list[dict], news: list[dict]) -> str:
+        gainers = sorted(
+            [s for s in stock_data if (s.get("change_pct") or 0) > 0],
+            key=lambda x: x.get("change_pct", 0), reverse=True
+        )[:3]
+        if gainers:
+            names = "、".join(
+                _company_label(s.get("company_name") or "", s.get("company_code") or "")
+                for s in gainers
+            )
+            return (
+                f"前日のグロース市場では個別銘柄への選別物色が続きました。"
+                f"中でも{names}が上昇するなど、成長性の高い銘柄に資金が向かう展開でした。"
+            )
+        if news:
+            return (
+                "前日のグロース市場では、個別銘柄の開示情報や決算への反応が中心の展開でした。"
+                "全体的には様子見ムードが漂い、方向感の定まりにくい一日となりました。"
+            )
+        return ""
+
     # ── Tomorrow's Points ─────────────────────────────────────────────────
 
-    def _tomorrow_points(self, analysis: dict, ipo_text: str) -> list[str]:
+    def _tomorrow_points(self, analysis: dict, ipo_text: str,
+                         news: list[dict] = None) -> list[str]:
         tomorrow = analysis.get("tomorrow_points", "")
+
+        if not tomorrow:
+            tomorrow = self._build_tomorrow_fallback(ipo_text, news or [])
+
         lines = [line(N, "最後に、本日以降の注目ポイントを教えてください。")]
+        lines.append(line(K, tomorrow))
 
-        if tomorrow:
-            lines.append(line(K, tomorrow))
-        else:
-            lines.append(line(K, "本日以降の具体的な注目イベントについては引き続き情報を収集中です。"))
-
-        if ipo_text and "ありません" not in ipo_text:
+        if ipo_text and "ありません" not in ipo_text and tomorrow and ipo_text not in tomorrow:
             lines.append(line(N, f"IPO情報もありますね。{ipo_text}"))
             lines.append(line(K, "新規上場銘柄は初値動向にも注目が集まりますね。"))
 
         lines.append(line(N, "ケンタさん、本日もありがとうございました。"))
         lines.append(line(K, "ありがとうございました。"))
         return lines
+
+    def _build_tomorrow_fallback(self, ipo_text: str, news: list[dict]) -> str:
+        parts = []
+        if ipo_text and "ありません" not in ipo_text and "なし" not in ipo_text:
+            parts.append(f"今週のIPO案件として{ipo_text}")
+        top_titles = [n.get("title", "") for n in news[:2] if n.get("title")]
+        if top_titles:
+            parts.append(
+                f"また、{top_titles[0]}など、"
+                "グロース企業の適時開示や決算発表の動向を引き続きウォッチしてまいります。"
+            )
+        if not parts:
+            parts.append(
+                "本日以降も、グロース市場各社の決算発表・適時開示情報に注目です。"
+                "為替動向やマクロ経済指標も引き続き確認してまいりましょう。"
+            )
+        return "".join(parts)
 
     # ── Ending ────────────────────────────────────────────────────────────
 
