@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04",
+  "generated_at": "2026-08-05",
   "period_days": 30,
   "top_gainers_30d": [
     {
@@ -104,86 +104,86 @@
     {
       "code": "4443",
       "name": "Sansan",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "9348",
       "name": "ispace",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "9552",
       "name": "M&Aリサーチ研究所",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "4478",
       "name": "freee",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "4180",
       "name": "Appier Group",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "4379",
       "name": "Photosynth",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "3923",
       "name": "ラクス",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "4477",
       "name": "BASE",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "5027",
       "name": "AnyMind Group",
-      "appearance_count": 20
+      "appearance_count": 21
     },
     {
       "code": "9166",
       "name": "GENDA",
-      "appearance_count": 20
+      "appearance_count": 21
     }
   ],
   "trending_themes": [
     {
       "theme": "エンタメ",
-      "score": 285
+      "score": 296
     },
     {
       "theme": "宇宙",
-      "score": 208
-    },
-    {
-      "theme": "FinTech",
-      "score": 163
+      "score": 224
     },
     {
       "theme": "AI",
-      "score": 149
+      "score": 166
     },
     {
       "theme": "EC",
-      "score": 133
+      "score": 153
     },
     {
-      "theme": "HR",
-      "score": 56
+      "theme": "FinTech",
+      "score": 152
     },
     {
       "theme": "IoT",
+      "score": 79
+    },
+    {
+      "theme": "HR",
       "score": 54
     },
     {
       "theme": "SaaS",
-      "score": 48
+      "score": 44
     }
   ],
   "top_keywords": []
