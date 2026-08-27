@@ -1,103 +1,103 @@
 {
-  "generated_at": "2026-08-27",
+  "generated_at": "2026-08-28",
   "period_days": 30,
   "top_gainers_30d": [
     {
       "code": "4478",
       "name": "freee",
       "sector": "SaaS",
-      "avg_change_pct": 2.49,
+      "avg_change_pct": 2.86,
       "max_change_pct": 17.62
     },
     {
       "code": "5027",
       "name": "AnyMind Group",
       "sector": "マーケティング",
-      "avg_change_pct": 1.92,
+      "avg_change_pct": 2.36,
       "max_change_pct": 16.05
     },
     {
       "code": "4180",
       "name": "Appier Group",
       "sector": "AI",
-      "avg_change_pct": 1.76,
+      "avg_change_pct": 1.97,
       "max_change_pct": 15.27
+    },
+    {
+      "code": "5253",
+      "name": "COVER",
+      "sector": "エンタメ",
+      "avg_change_pct": 1.45,
+      "max_change_pct": 22.22
     },
     {
       "code": "4443",
       "name": "Sansan",
       "sector": "SaaS",
-      "avg_change_pct": 1.25,
+      "avg_change_pct": 1.39,
       "max_change_pct": 9.68
     },
     {
       "code": "9166",
       "name": "GENDA",
       "sector": "エンタメ",
-      "avg_change_pct": 1.23,
+      "avg_change_pct": 1.28,
       "max_change_pct": 9.26
-    },
-    {
-      "code": "215A",
-      "name": "タイミー",
-      "sector": "HR",
-      "avg_change_pct": 1.09,
-      "max_change_pct": 6.39
     },
     {
       "code": "3923",
       "name": "ラクス",
       "sector": "SaaS",
-      "avg_change_pct": 0.94,
+      "avg_change_pct": 1.14,
       "max_change_pct": 7.4
     },
     {
-      "code": "5253",
-      "name": "COVER",
-      "sector": "エンタメ",
-      "avg_change_pct": 0.91,
-      "max_change_pct": 22.22
+      "code": "215A",
+      "name": "タイミー",
+      "sector": "HR",
+      "avg_change_pct": 1.04,
+      "max_change_pct": 6.39
     },
     {
       "code": "9552",
       "name": "M&Aリサーチ研究所",
       "sector": "M&A",
-      "avg_change_pct": 0.69,
+      "avg_change_pct": 0.78,
       "max_change_pct": 15.71
     },
     {
       "code": "4379",
       "name": "Photosynth",
       "sector": "IoT",
-      "avg_change_pct": 0.48,
+      "avg_change_pct": 0.61,
       "max_change_pct": 4.08
     }
   ],
   "top_losers_30d": [
     {
-      "code": "4051",
-      "name": "GMOフィナンシャルゲート",
-      "avg_change_pct": 0.01
-    },
-    {
       "code": "9348",
       "name": "ispace",
-      "avg_change_pct": 0.02
+      "avg_change_pct": 0.15
+    },
+    {
+      "code": "4051",
+      "name": "GMOフィナンシャルゲート",
+      "avg_change_pct": 0.17
     },
     {
       "code": "3991",
       "name": "ウォンテッドリー",
-      "avg_change_pct": 0.17
+      "avg_change_pct": 0.23
     },
     {
       "code": "4477",
       "name": "BASE",
-      "avg_change_pct": 0.36
+      "avg_change_pct": 0.41
     },
     {
       "code": "4379",
       "name": "Photosynth",
-      "avg_change_pct": 0.48
+      "avg_change_pct": 0.61
     }
   ],
   "top_volume_stocks": [
@@ -117,6 +117,11 @@
       "appearance_count": 24
     },
     {
+      "code": "5253",
+      "name": "COVER",
+      "appearance_count": 24
+    },
+    {
       "code": "4443",
       "name": "Sansan",
       "appearance_count": 24
@@ -127,18 +132,13 @@
       "appearance_count": 24
     },
     {
-      "code": "215A",
-      "name": "タイミー",
-      "appearance_count": 24
-    },
-    {
       "code": "3923",
       "name": "ラクス",
       "appearance_count": 24
     },
     {
-      "code": "5253",
-      "name": "COVER",
+      "code": "215A",
+      "name": "タイミー",
       "appearance_count": 24
     },
     {
@@ -155,35 +155,35 @@
   "trending_themes": [
     {
       "theme": "エンタメ",
-      "score": 288
+      "score": 297
     },
     {
       "theme": "宇宙",
-      "score": 182
+      "score": 196
     },
     {
       "theme": "AI",
-      "score": 153
+      "score": 144
     },
     {
       "theme": "FinTech",
-      "score": 110
+      "score": 102
     },
     {
       "theme": "SaaS",
-      "score": 96
+      "score": 89
     },
     {
       "theme": "IoT",
-      "score": 41
+      "score": 37
     },
     {
       "theme": "HR",
-      "score": 36
+      "score": 31
     },
     {
       "theme": "EC",
-      "score": 21
+      "score": 16
     }
   ],
   "top_keywords": []
