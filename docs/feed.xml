@@ -6,7 +6,7 @@
     <description>東証グロース市場の最新動向を毎朝お届けする音声ニュースです。教育目的であり投資助言ではありません。</description>
     <language>ja</language>
     <copyright>© 2026 oyasusan</copyright>
-    <lastBuildDate>Thu, 03 Sep 2026 22:12:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 22:11:46 +0000</lastBuildDate>
     <generator>Grawth Podcast Generator</generator>
     <ns0:author>oyasusan</ns0:author>
     <ns0:owner>
@@ -26,6 +26,18 @@
       <title>グロース市場ニュース</title>
       <link>https://oyasusan.github.io/growth-market-news-podcast</link>
     </image>
+    <item>
+      <title>2026-09-07 グロース市場ニュース</title>
+      <link>https://oyasusan.github.io/growth-market-news-podcast/episodes/podcast_2026-09-07.mp3</link>
+      <guid isPermaLink="false">grawth-podcast-2026-09-07</guid>
+      <description>2026-09-07 グロース市場ニュース</description>
+      <ns0:summary>2026-09-07 グロース市場ニュース</ns0:summary>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 -0000</pubDate>
+      <enclosure url="https://oyasusan.github.io/growth-market-news-podcast/episodes/podcast_2026-09-07.mp3" length="5190912" type="audio/mpeg"/>
+      <ns0:duration>05:24</ns0:duration>
+      <ns0:explicit>false</ns0:explicit>
+      <ns0:episodeType>full</ns0:episodeType>
+    </item>
     <item>
       <title>2026-09-04 グロース市場ニュース</title>
       <link>https://oyasusan.github.io/growth-market-news-podcast/episodes/podcast_2026-09-04.mp3</link>
@@ -95,18 +107,6 @@
       <pubDate>Fri, 28 Aug 2026 00:00:00 -0000</pubDate>
       <enclosure url="https://oyasusan.github.io/growth-market-news-podcast/episodes/podcast_2026-08-28.mp3" length="5352662" type="audio/mpeg"/>
       <ns0:duration>05:34</ns0:duration>
-      <ns0:explicit>false</ns0:explicit>
-      <ns0:episodeType>full</ns0:episodeType>
-    </item>
-    <item>
-      <title>2026-08-27 グロース市場ニュース</title>
-      <link>https://oyasusan.github.io/growth-market-news-podcast/episodes/podcast_2026-08-27.mp3</link>
-      <guid isPermaLink="false">grawth-podcast-2026-08-27</guid>
-      <description>2026-08-27 グロース市場ニュース</description>
-      <ns0:summary>2026-08-27 グロース市場ニュース</ns0:summary>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 -0000</pubDate>
-      <enclosure url="https://oyasusan.github.io/growth-market-news-podcast/episodes/podcast_2026-08-27.mp3" length="5507307" type="audio/mpeg"/>
-      <ns0:duration>05:44</ns0:duration>
       <ns0:explicit>false</ns0:explicit>
       <ns0:episodeType>full</ns0:episodeType>
     </item>
