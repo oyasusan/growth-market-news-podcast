@@ -1,189 +1,189 @@
 {
-  "generated_at": "2026-09-18",
+  "generated_at": "2026-09-21",
   "period_days": 30,
   "top_gainers_30d": [
     {
-      "code": "5027",
-      "name": "AnyMind Group",
-      "sector": "マーケティング",
-      "avg_change_pct": 1.24,
-      "max_change_pct": 16.05
-    },
-    {
-      "code": "4180",
-      "name": "Appier Group",
-      "sector": "AI",
-      "avg_change_pct": 1.05,
-      "max_change_pct": 15.02
+      "code": "4379",
+      "name": "Photosynth",
+      "sector": "IoT",
+      "avg_change_pct": 0.87,
+      "max_change_pct": 6.14
     },
     {
       "code": "4478",
       "name": "freee",
       "sector": "SaaS",
-      "avg_change_pct": 0.84,
+      "avg_change_pct": 0.71,
       "max_change_pct": 11.26
-    },
-    {
-      "code": "4379",
-      "name": "Photosynth",
-      "sector": "IoT",
-      "avg_change_pct": 0.55,
-      "max_change_pct": 6.14
     },
     {
       "code": "5253",
       "name": "COVER",
       "sector": "エンタメ",
-      "avg_change_pct": 0.52,
+      "avg_change_pct": 0.53,
       "max_change_pct": 7.46
     },
     {
-      "code": "3991",
-      "name": "ウォンテッドリー",
-      "sector": "HR",
-      "avg_change_pct": 0.27,
-      "max_change_pct": 14.25
+      "code": "4180",
+      "name": "Appier Group",
+      "sector": "AI",
+      "avg_change_pct": 0.49,
+      "max_change_pct": 6.7
+    },
+    {
+      "code": "5027",
+      "name": "AnyMind Group",
+      "sector": "マーケティング",
+      "avg_change_pct": 0.39,
+      "max_change_pct": 6.69
     },
     {
       "code": "4443",
       "name": "Sansan",
       "sector": "SaaS",
-      "avg_change_pct": 0.12,
+      "avg_change_pct": 0.36,
       "max_change_pct": 9.68
     },
     {
-      "code": "9348",
-      "name": "ispace",
-      "sector": "宇宙",
-      "avg_change_pct": -0.02,
-      "max_change_pct": 2.12
+      "code": "3991",
+      "name": "ウォンテッドリー",
+      "sector": "HR",
+      "avg_change_pct": 0.19,
+      "max_change_pct": 14.25
     },
     {
-      "code": "4477",
-      "name": "BASE",
-      "sector": "EC",
-      "avg_change_pct": -0.04,
-      "max_change_pct": 4.35
+      "code": "3923",
+      "name": "ラクス",
+      "sector": "SaaS",
+      "avg_change_pct": 0.1,
+      "max_change_pct": 7.39
     },
     {
       "code": "9552",
       "name": "M&Aリサーチ研究所",
       "sector": "M&A",
-      "avg_change_pct": -0.08,
+      "avg_change_pct": 0.04,
       "max_change_pct": 15.71
+    },
+    {
+      "code": "9348",
+      "name": "ispace",
+      "sector": "宇宙",
+      "avg_change_pct": -0.05,
+      "max_change_pct": 2.11
     }
   ],
   "top_losers_30d": [
     {
       "code": "215A",
       "name": "タイミー",
-      "avg_change_pct": -0.78
+      "avg_change_pct": -0.51
     },
     {
       "code": "4051",
       "name": "GMOフィナンシャルゲート",
-      "avg_change_pct": -0.37
+      "avg_change_pct": -0.4
     },
     {
-      "code": "3923",
-      "name": "ラクス",
+      "code": "4477",
+      "name": "BASE",
       "avg_change_pct": -0.22
     },
     {
       "code": "9166",
       "name": "GENDA",
-      "avg_change_pct": -0.13
-    },
-    {
-      "code": "9552",
-      "name": "M&Aリサーチ研究所",
-      "avg_change_pct": -0.08
-    }
-  ],
-  "top_volume_stocks": [
-    {
-      "code": "5027",
-      "name": "AnyMind Group",
-      "appearance_count": 24
-    },
-    {
-      "code": "4180",
-      "name": "Appier Group",
-      "appearance_count": 24
-    },
-    {
-      "code": "4478",
-      "name": "freee",
-      "appearance_count": 24
-    },
-    {
-      "code": "4379",
-      "name": "Photosynth",
-      "appearance_count": 24
-    },
-    {
-      "code": "5253",
-      "name": "COVER",
-      "appearance_count": 24
-    },
-    {
-      "code": "3991",
-      "name": "ウォンテッドリー",
-      "appearance_count": 24
-    },
-    {
-      "code": "4443",
-      "name": "Sansan",
-      "appearance_count": 24
+      "avg_change_pct": -0.14
     },
     {
       "code": "9348",
       "name": "ispace",
-      "appearance_count": 24
+      "avg_change_pct": -0.05
+    }
+  ],
+  "top_volume_stocks": [
+    {
+      "code": "4379",
+      "name": "Photosynth",
+      "appearance_count": 22
     },
     {
-      "code": "4477",
-      "name": "BASE",
-      "appearance_count": 24
+      "code": "4478",
+      "name": "freee",
+      "appearance_count": 22
+    },
+    {
+      "code": "5253",
+      "name": "COVER",
+      "appearance_count": 22
+    },
+    {
+      "code": "4180",
+      "name": "Appier Group",
+      "appearance_count": 22
+    },
+    {
+      "code": "5027",
+      "name": "AnyMind Group",
+      "appearance_count": 22
+    },
+    {
+      "code": "4443",
+      "name": "Sansan",
+      "appearance_count": 22
+    },
+    {
+      "code": "3991",
+      "name": "ウォンテッドリー",
+      "appearance_count": 22
+    },
+    {
+      "code": "3923",
+      "name": "ラクス",
+      "appearance_count": 22
     },
     {
       "code": "9552",
       "name": "M&Aリサーチ研究所",
-      "appearance_count": 24
+      "appearance_count": 22
+    },
+    {
+      "code": "9348",
+      "name": "ispace",
+      "appearance_count": 22
     }
   ],
   "trending_themes": [
     {
       "theme": "エンタメ",
-      "score": 318
+      "score": 288
     },
     {
       "theme": "AI",
-      "score": 203
-    },
-    {
-      "theme": "FinTech",
-      "score": 148
+      "score": 169
     },
     {
       "theme": "宇宙",
-      "score": 144
+      "score": 143
+    },
+    {
+      "theme": "FinTech",
+      "score": 124
     },
     {
       "theme": "HR",
-      "score": 131
+      "score": 113
     },
     {
       "theme": "EC",
-      "score": 86
+      "score": 71
     },
     {
       "theme": "SaaS",
-      "score": 67
+      "score": 59
     },
     {
       "theme": "IoT",
-      "score": 24
+      "score": 20
     }
   ],
   "top_keywords": []
